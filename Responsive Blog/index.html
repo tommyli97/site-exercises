@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="/normalize.css" rel="stylesheet">
+    <style>
+        header {
+            text-align: center;
+            background: url('https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/ny?v=1650135632727');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        a {
+            color: white;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        img {
+            margin: 40px 0px 0px 0px;
+            border: 7px solid white;
+            border-radius: 20px;
+            width: 30px;
+        }
+
+        ul {
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        li {
+            display: inline;
+            padding: 0px 10px 0px 10px;
+        }
+
+        article {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 36px;
+                padding: 5px;
+            }
+
+            li {
+                padding: 5px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img
+            src="https://cdn.glitch.global/4be6c257-8b85-4358-9143-36cf8be89f98/download.png?v=1652156680596">
+        <h1>Tom's Blog</h1>
+        <ul>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Best Poems</a></li>
+            <li><a href="#">Worst Poems</a></li>
+        </ul>
+    </header>
+    <article>
+        <h2>Apple</h2>
+        <p>Apples grown from seed tend to be very different from those of their parents, and the
+            resultant fruit frequently lacks desired characteristics. Generally, apple cultivars are
+            propagated by clonal grafting onto rootstocks. Apple trees grown without rootstocks tend
+            to be larger and much slower to fruit after planting. Rootstocks are used to control the
+            speed of growth and the size of the resulting tree, allowing for easier harvesting.
+        </p>
+        <button>Like</button>
+    </article>
+    <article>
+        <h2>Orange</h2>
+        <p>An orange is a fruit of various citrus species in the family Rutaceae (see list of plants
+            known as orange); it primarily refers to Citrus sinensis,which is also called
+            sweet orange, to distinguish it from the related Citrus aurantium, referred to as
+            bitter orange. The sweet orange reproduces asexually (apomixis through nucellar
+            embryony); varieties of sweet orange arise through mutations.</p>
+        <button>Like</button>
+    </article>
+    <article>
+        <h2>Banana</h2>
+        <p>A banana is an elongated, edible fruitbotanically a berry produced by several
+            kinds of large herbaceous flowering plants in the genus Musa.In some countries,
+            bananas used for cooking may be called "plantains", distinguishing them from dessert
+            bananas. The fruit is variable in size, color, and firmness, but is usually elongated
+            and curved, with soft flesh rich in starch covered with a rind, which may be green,
+            yellow, red, purple, or brown when ripe. </p>
+        <button>Like</button>
+    </article>
+    <script>
+        $("button").on("click", function () {
+            alert("Fruits are awesome!");
+        });
+    </script>
+</body>
